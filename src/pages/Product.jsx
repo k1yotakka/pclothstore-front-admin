@@ -130,7 +130,7 @@ function Product() {
                      onClick={()=>{  
                         addToCart()  
                      }}  
-                     className="bg-blue-500 text-white px-4 py-2 rounded-md ml-4">  
+                     className="bg-gray-700 text-white py-3 px-6 rounded-md hover:bg-gray-800 ml-4">  
                         Add to Cart  
                   </button>  
                </div>  

@@ -7,6 +7,7 @@ import Orders from './pages/Orders';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Admin from './pages/Admin';
 
 function App() {
    return (
@@ -14,6 +15,7 @@ function App() {
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/admin" element={<Admin />} />
             <Route path="/product/:id" element={<Product />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/orders" element={<Orders />} />

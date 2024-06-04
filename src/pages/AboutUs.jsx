@@ -8,7 +8,7 @@ const AboutUs = () => {
             <Navbar />
             <div className="container mx-auto px-4 py-12 flex-grow">
                 <div className="bg-white shadow-md rounded-lg p-8 border border-gray-200">
-                    <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">About Us</h1>
+                    <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">О Нас</h1>
                     <div className="text-lg text-gray-700 leading-relaxed space-y-6">
                         <p>
                             Welcome to P-Cloth Store! We are a dedicated team providing high-quality clothing and accessories. Our mission is to offer our customers the best products and services.

@@ -13,6 +13,8 @@ function Navbar() {
    const [isUserPopupOpen, setIsUserPopupOpen] = useState(false);
    const [isCartPopupOpen, setIsCartPopupOpen] = useState(false);
 
+   const isAdmin = true;
+
    // Функция для переключения видимости поп-апа пользователя
    const toggleUserPopup = () => {
       setIsUserPopupOpen(!isUserPopupOpen);
@@ -41,7 +43,17 @@ function Navbar() {
                <span className="font-circular text-[18px]">Orders</span>
             </NavLink>
             <span className="font-circular text-[18px]">Payments</span>
-            <span className="font-circular text-[18px]">Support</span>
+            {isAdmin ? (
+               <NavLink
+                  to="/admin"
+                  className="font-circular text-[18px]"
+                  activeClassName="text-blue-500"
+               >
+                  Admin Panel
+               </NavLink>
+            ) : (
+               ''
+            )}
          </div>
          <div className="flex ml-auto space-x-4 items-center w-[120px] justify-between">
             {/* <img
@@ -56,9 +68,7 @@ function Navbar() {
                alt="cart icon"
             />
             <img
-               src={
-                  '/img/ava.png'
-               }
+               src={'/img/ava.png'}
                className="w-[40px] h-[40px] rounded-full cursor-pointer"
                alt="avatar"
                onClick={toggleUserPopup}

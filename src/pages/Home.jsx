@@ -10,7 +10,7 @@ function Home() {
    const { accessToken, user } = useAuth();
 
    useEffect(() => {
-      console.log(user);
+      console.log(JSON.parse(localStorage.getItem("user")))
 
       if (localStorage.getItem('accessToken') == null) {
          navigate('/auth');

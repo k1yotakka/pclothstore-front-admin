@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
             <Navbar />
             <div className="container mx-auto px-4 py-12">
                 <div className="bg-white shadow-md rounded-lg p-8 border border-gray-200">
-                    <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Privacy Policy</h1>
+                    <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Политика Конфиденциальности</h1>
                     <div className="text-lg text-gray-700 leading-relaxed space-y-6">
                         <p>
                             At P-Cloth Store, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website.
